@@ -1,0 +1,55 @@
+[project]
+name = "bitcoin-lending-protocol"
+description = ""
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+
+[contracts.lending-pool-v4]
+path = "contracts/lending-pool-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.passkey-signer-v4]
+path = "contracts/auth/passkey-signer-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.protocol-governance-v4]
+path = "contracts/governance/protocol-governance-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.simple-liquidator-v4]
+path = "contracts/liquidators/simple-liquidator-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.price-oracle-v4]
+path = "contracts/oracle/price-oracle-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.liquidator-trait-v4]
+path = "contracts/traits/liquidator-trait-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.lending-pool-v4-trait]
+path = "contracts/traits/lending-pool-v4-trait.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.math-helpers-v4]
+path = "contracts/utils/math-helpers-v4.clar"
+epoch = "3.3"
+clarity_version = 4
+
+[contracts.test-ref-v4]
+path = "contracts/test-ref-v4.clar"
+epoch = "3.3"
+clarity_version = 4
